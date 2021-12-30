@@ -23,7 +23,7 @@ List<Integer> List = new ArrayList(Arrays.asList(1022,1134,1232,2345));
 
         System.out.println(List.stream().sorted());
 
-
+int sayi=3;
 
     }
 }
