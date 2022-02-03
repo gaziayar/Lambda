@@ -1,0 +1,15 @@
+package day06;
+
+import java.io.InputStream;
+import java.util.Scanner;
+
+public class c2_ifstatement2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      
+
+
+	}
+
+}

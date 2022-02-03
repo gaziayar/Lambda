@@ -1,0 +1,32 @@
+package techproed.jdbcOrnekler;
+
+import java.sql.*;
+
+public class Jdbc3DML {
+
+	public static void main(String[] args) throws SQLException, ClassNotFoundException {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sys?serverTimezone=UTC", "root",
+				"2244");
+
+		Statement st = con.createStatement();
+	
+		/*=======================================================================
+		  ORNEK1: Bolumler tablosuna yeni bir kayit (80, 'ARGE', 'ISTANBUL') 
+		  ekleyelim 
+		========================================================================*/
+	
+		int s1=st.executeUpdate("INSERT INTO bolumler VALUES(91, 'ARGE2','CORLU')");
+		
+		System.out.println(s1+ "satir eklendi");
+		
+		
+		
+		
+		
+	
+	
+	}
+
+}

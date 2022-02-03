@@ -1,0 +1,50 @@
+package lambda;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Lambda_01 {
+	/*
+	
+		   1) Lambda "Functional Programming"
+		      "Functional Programming" de "Nasil yaparim?" degil "Ne yaparim?" dusunulur.
+		   2) "Structured Programming" de "Ne yaparim?" dan cok "Nasil Yaparim?" dusunulur
+		   3) "Functional Programming" hiz, code kisaligi, code okunabilirligi
+		   ve hatasiz code yazma acilarindan cok faydalidir.
+		   4) Lambda sadece collections'larda(List, Queue ve Set) ve array'lerde kullanilabilir ancak map'lerde kullanılmaz.
+		      Lambda kullanmak hatasız code kullanmaktır.
+		*/
+
+	
+	
+		public static void main(String[] args) {
+		List<Integer>	List=new ArrayList<>(Arrays.asList(12,13,65,3,7,34,22,60,42,55));
+		 prinElStructured(List);
+		 System.out.println("     *********       ");
+		 printElfunctional(List);
+	}
+		//structured Programming ile list elemanlerinin  tamamini yazdiriniz
+		public static void prinElStructured(List<Integer>List) {
+			
+			for (Integer v : List) {
+				System.out.print(v + " ");  // 12 13 65 3 7 34 22 60 42 55 
+			}
+	
+		}
+		//Functional Programming ile list elemanlerinin  tamamini aralarina bosluk birakarak yazdiriniz	
+		
+		public static void printElfunctional(List<Integer>List) {
+			
+			List.stream().forEach(t->System.out.print(t+" "));
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+}
