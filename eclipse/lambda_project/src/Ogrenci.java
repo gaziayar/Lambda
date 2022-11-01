@@ -60,7 +60,7 @@ public class Ogrenci {
                 ", soyAd='" + soyAd + '\'' +
                 ", yas=" + yas +
                 ", diplomaNotu=" + diplomaNotu +
-                ", cinsiyet='" + cinsiyet + '\'' +
+                ", cccccccinsiyet='" + cinsiyet + '\'' +
                 '}';
     }
 }
